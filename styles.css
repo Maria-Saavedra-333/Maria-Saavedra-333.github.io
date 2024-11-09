@@ -11,6 +11,7 @@
 }
 
 nav {
+    z-index: 99;
     position: sticky;
     top: 0;
 }
@@ -24,7 +25,6 @@ header {
     justify-content: space-evenly;
     align-items: center;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 100vw;
 }
 
 .intro {
@@ -42,6 +42,16 @@ header {
     box-sizing: border-box;
 }
 
+.displayimage {
+    display: flex;
+    justify-content: center;
+}
+
+.insulationPhotos {
+    height: 500px;
+    align-self: center;
+}
+
 /* Slideshow container */
 .slideshow-container {
     max-width: 1000px;
@@ -52,6 +62,10 @@ header {
 /* Hide the images by default */
 .mySlides {
     display: none;
+}
+
+.mySlides.default-slide {
+    display: block;
 }
 
 /* Next & previous buttons */
@@ -154,7 +168,6 @@ h1 {
 }
 
 section {
-    width: 100vw;
     height: 20vw;
 }
 
@@ -168,15 +181,25 @@ body {
     width: 50vw;
     text-align: left;
     padding: 60px;
+    padding-left: 100px;
 }
 
 .servicemap {
-    width: 50px;
+    width: 50vw;
+    padding: 10px;
     background-color: #333533;
 }
 
 .servicemap img {
-    width: 100%;
+    height: 333px;
+}
+
+.servicemapimage {
+    display: flex;
+    justify-content: right;
+    align-content: center;
+    padding-right: 100px;
+    padding-top: 20px;
 }
 
 .bottomofpage {
@@ -184,10 +207,9 @@ body {
 }
 
 footer {
-    background-color: #e8eddf;
+    background-color: #cfdbd5;
     color: #242423;
     padding: 20px;
-    border-radius: 25px;
     font-size: 16px;
 }
 
@@ -201,11 +223,13 @@ a {
 }
 
 
-
-
-.about-me {
-    max-width: 500px;
-    margin: auto;
+.about-us {
+    display: flex;
+    flex-direction: column;
+    justify-content: right;
+    text-align: right;
+    padding: 100px;
+    color: #333533;
 }
 
 .linkedin-logo {

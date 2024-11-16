@@ -227,11 +227,27 @@ a {
 .about-us {
     display: flex;
     flex-direction: column;
-    justify-content: right;
-    text-align: right;
+    justify-content: flex-end;
+    padding-top: 75px;
     padding: 100px;
     color: #333533;
+    overflow: break-word;
+    margin-left: 650px;
+    margin-right: 0;
 }
+
+
+
+.logoimage {
+    display: flex;
+    justify-content: left;
+    align-content: center;
+    padding-right: 100px;
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+
 
 .linkedin-logo {
     height: 16px;
